@@ -1,0 +1,17 @@
+{
+    "name": "palestra-ag",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "node index"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "csv-parse": "^6.2.1",
+        "lodash": "^4.18.1"
+    }
+}
