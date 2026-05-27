@@ -18,12 +18,10 @@ Na prática, o mundo raramente é perfeitamente simétrico. Por exemplo:
 
 ## 📂 Sobre as Instâncias
 
-Os dados trabalhados neste repositório referem-se às instâncias **fb17** e **ftv64**, e pertencentem à biblioteca clássica TSPLIB.
+Os dados trabalhados neste repositório referem-se à instância **fb17** e pertencentem à biblioteca clássica TSPLIB.
 
 - **Instâncias:** `ftv17.atsp` e `ftv64.atsp`
 - **Tipo:** ATSP (_Asymmetric Traveling Salesman Problem_)
-- **Dimensão:** 18 e 65 nós
-- **Melhor solução conhecida (Ótimo):** `39` para `br17`, e `1839` para `ftv64`
-- **Download dos dados:**
-    - [TSPLIB95 - ftv64.atsp.gz](https://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/atsp/ftv64.atsp.gz)
-    - [TSPLIB95 - br17.atsp.gz](https://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/atsp/br17.atsp.gz)
+- **Dimensão:** 17
+- **Melhor solução conhecida (Ótimo):** `39`
+- **Download dos dados:** [TSPLIB95 - br17.atsp.gz](https://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/atsp/br17.atsp.gz)
