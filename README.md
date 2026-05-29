@@ -20,7 +20,7 @@ Na prática, o mundo raramente é perfeitamente simétrico. Por exemplo:
 
 Os dados trabalhados neste repositório referem-se à instância **fb17** e pertencentem à biblioteca clássica TSPLIB.
 
-- **Instâncias:** `ftv17.atsp` e `ftv64.atsp`
+- **Instâncias:** `ftv17.atsp`
 - **Tipo:** ATSP (_Asymmetric Traveling Salesman Problem_)
 - **Dimensão:** 17
 - **Melhor solução conhecida (Ótimo):** `39`
