@@ -2,6 +2,15 @@
 
 _Asymmetric Traveling Salesman Problem_
 
+## 📦 Instalação dos Pacotes e Execução
+
+É necessário que tenha o node instalado na sua máquina.
+
+Para executar o projeto, use os seguintes comandos:
+
+- Instalação dos pacotes: `npm install`
+- Execução do código: `npm run dev` ou `node index.js`
+
 ## 📌 O que é o ATSP?
 
 O Problema do Caixeiro Viajante é um dos desafios mais famosos da otimização combinatória. O objetivo geral é simples: dado um conjunto de $n$ nós (ou cidades), deve-se encontrar a menor rota possível que visite cada nó exatamente uma vez e retorne ao ponto de partida.
@@ -13,8 +22,7 @@ Nesta variação **Assimétrica (ATSP)**, há um detalhe crucial: a distância (
 Na prática, o mundo raramente é perfeitamente simétrico. Por exemplo:
 
 - **Logística urbana e Roteamento de Veículos:** Em cidades, as ruas costumam ter mão única. Além disso, ir de um ponto A para o B pode envolver uma subida íngreme (exigindo mais combustível e tempo), enquanto a volta de B para A é uma descida rápida.
-
----
+- **Planejamento de circuitos e microchips:** Durante o projeto de circuitos integrados, algoritmos relacionados ao TSP ajudam a otimizar conexões e reduzir comprimentos de trilhas.
 
 ## 📂 Sobre as Instâncias
 
