@@ -17,6 +17,8 @@ O Problema do Caixeiro Viajante é um dos desafios mais famosos da otimização 
 
 Nesta variação **Assimétrica (ATSP)**, há um detalhe crucial: a distância (ou custo, ou tempo) para viajar de uma cidade $i$ para uma cidade $j$ pode ser diferente da distância para voltar de $j$ para $i$. Matematicamente, isso significa que $C(i, j) \neq C(j, i)$.
 
+Neste projeto, estudamos uma variação do Problema do Caixeiro Viajante (PCV) em que o ponto inicial e final da rota é fixo. O problema modela uma situação prática na qual uma empresa de transporte busca otimizar o trajeto de uma linha de ônibus, garantindo a visita a todos os pontos de interesse com o menor custo possível e o retorno à garagem ao término da operação.
+
 ## 💡 Aplicações no Mundo Real
 
 Na prática, o mundo raramente é perfeitamente simétrico. Por exemplo:
