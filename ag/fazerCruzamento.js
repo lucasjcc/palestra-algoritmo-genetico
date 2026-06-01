@@ -10,35 +10,37 @@ export default function fazerCruzamento(cromossomoPai1, cromossomoPai2) {
 
     const cromossomoReduzidoFilho = new Array(quantidadeGenes).fill(null);
 
+    // Preenche com o cromossomo do Pai 1
     for (let i = ponto1; i <= ponto2; i++) {
         cromossomoReduzidoFilho[i] = cromossomoReduzidoPai1[i];
     }
 
+    // Preenche com o cromossomo do Pai 2
+    const cromossomoPai2Reordenado = [
+        ...cromossomoReduzidoPai2.slice(ponto2 + 1),
+        ...cromossomoReduzidoPai2.slice(0, ponto2 + 1),
+    ];
+
+    const cromossomoPai2ReordenadoFiltrado = [];
+    for (let gene of cromossomoPai2Reordenado) {
+        if (!cromossomoReduzidoFilho.includes(gene)) {
+            cromossomoPai2ReordenadoFiltrado.push(gene);
+        }
+    }
+
     let indiceFilho = ponto2 + 1;
+
     if (indiceFilho >= quantidadeGenes) {
         indiceFilho = 0;
     }
 
-    let indicePai2 = ponto2 + 1;
-    if (indicePai2 >= quantidadeGenes) {
-        indicePai2 = 0;
-    }
+    for (const gene of cromossomoPai2ReordenadoFiltrado) {
+        cromossomoReduzidoFilho[indiceFilho] = gene;
 
-    for (let i = 0; i < quantidadeGenes; i++) {
-        const geneCandidato = cromossomoReduzidoPai2[indicePai2];
+        indiceFilho++;
 
-        if (!cromossomoReduzidoFilho.includes(geneCandidato)) {
-            cromossomoReduzidoFilho[indiceFilho] = geneCandidato;
-
-            indiceFilho++;
-            if (indiceFilho >= quantidadeGenes) {
-                indiceFilho = 0;
-            }
-        }
-
-        indicePai2++;
-        if (indicePai2 >= quantidadeGenes) {
-            indicePai2 = 0;
+        if (indiceFilho >= quantidadeGenes) {
+            indiceFilho = 0;
         }
     }
 
